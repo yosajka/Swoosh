@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".SkillActivity">
+    tools:context=".Controllers.SkillActivity">
 
     <ImageView
         android:id="@+id/imageView4"
@@ -57,24 +57,26 @@
         app:layout_constraintTop_toBottomOf="@+id/textView5">
 
         <ToggleButton
-            android:id="@+id/toggleButton4"
+            android:id="@+id/beginnerSkillBtn"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginRight="16dp"
             android:layout_weight="1"
-            android:background="@drawable/swoosh_button"
+            android:background="@drawable/swoosh_toggle"
+            android:onClick="onBeginnerSkillClick"
             android:text="biginner"
             android:textColor="@android:color/white"
             android:textOff="beginner"
             android:textOn="beginner" />
 
         <ToggleButton
-            android:id="@+id/toggleButton5"
+            android:id="@+id/ballerSkillBtn"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="16dp"
             android:layout_weight="1"
-            android:background="@drawable/swoosh_button"
+            android:background="@drawable/swoosh_toggle"
+            android:onClick="onBallerSkillClick"
             android:text="baller"
             android:textColor="@android:color/white"
             android:textOff="baller"
@@ -82,7 +84,7 @@
     </LinearLayout>
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/finishSkillBtn"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginBottom="16dp"
@@ -90,6 +92,7 @@
         android:layout_marginStart="16dp"
         android:background="@drawable/swoosh_button"
         android:fontFamily="@font/montserrat"
+        android:onClick="onFinishSkillClick"
         android:text="FINISH"
         android:textColor="@android:color/white"
         android:textSize="18sp"

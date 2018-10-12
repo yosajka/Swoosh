@@ -1,4 +1,4 @@
-package ken.com.swoosh
+package ken.com.swoosh.Controllers
 
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
